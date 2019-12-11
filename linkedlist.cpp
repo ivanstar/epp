@@ -84,6 +84,27 @@ void find(NodeType* head, int value)
 
 }
 
+int getMaxHelper(SNode *ptr)
+	{
+		//Base case
+		if (ptr == NULL)
+		{
+			return 0;
+		}
+		//ptr is at head
+		//
+		if (ptr->elem > getMaxHelper(ptr->next))
+		{
+			return ptr->elem;
+		}
+
+		else
+		{
+			return getMaxHelper(ptr->next);
+		}
+
+
+	}
 
 
 int main()
