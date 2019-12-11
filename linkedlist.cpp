@@ -83,23 +83,7 @@ void find(NodeType* head, int value)
   }
 
 }
-int getMinimum(int *array, int length) {
 
-	if(length == 1)
-	{
-		return 0;
-	}
-
-	if(array[length-1] < getMinimum(array,length-1))
-	{
-		return array[length-1];
-	}
-	else
-	{
-		return getMinimum(array,length-1);
-	}
-
-}
 
 
 int main()
