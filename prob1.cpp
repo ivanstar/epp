@@ -14,6 +14,19 @@ void printArray(int myarray[], int n)
 	cout << endl;
 }
 
+int findSmall(int array[],int size)
+{
+    int smallValue = array[0];
+    for (int i = 0;i < size;i++)
+    {
+      if (smallValue > array[i])
+      {
+        smallValue = array[i];
+      }
+    }
+    return smallValue;
+}
+
 
 // Implement getElement here
 int getElement(int myarray[], int n)
